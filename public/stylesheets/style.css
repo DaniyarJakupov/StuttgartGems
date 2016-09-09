@@ -1,0 +1,19 @@
+.myform {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .caption-full {
+    padding: 10px;
+}
+
+.alert {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    text-transform: capitalize;
+}

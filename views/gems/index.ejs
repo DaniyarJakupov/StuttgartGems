@@ -1,0 +1,40 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+    <header class="jumbotron"> 
+        <div class="container">
+            <h1>Welcome to Stuttgart Gems</h1> 
+            <p>View all best places to go in Stuttgart city</p>
+            <p>
+                <a href="/gems/new" class="btn btn-primary btn-large">Submit a New Gem</a>
+            </p>
+        </div>
+    </header>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Favorite Spots</h3>
+        </div>    
+    </div>
+    
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% gems.forEach(function(gem){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="<%=gem.image%>"></img>
+                    <div class="caption">
+                        <h4><%= gem.name %></h3>
+                    </div>
+                    <p>
+                        <a href="/gems/<%=gem._id%>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+                
+            </div>
+        <% }) %>
+    </div>
+  
+</div>
+
+<% include ../partials/footer %>

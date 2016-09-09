@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+    <div class="row"> 
+    
+        <div class="myform">
+            <h1>Edit Your Comment</h1>
+    
+            <form action="/gems/<%=gem_id%>/comments/<%=comment._id%>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <label class="control-label">Comment</label> 
+                    <textarea name="comment[text]" type="text" class="form-control" rows="4"><%=comment.text%></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-large btn-success btn-block">Update</button>
+                </div>
+            </form>
+            
+            <a href="/gems/<%=gem_id%>" class="btn btn-large btn-info btn-block">Cancel</a>
+        </div>
+        
+    </div>
+        
+</div>
+
+<% include ../partials/footer %>

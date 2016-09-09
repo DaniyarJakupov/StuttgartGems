@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+    <div class="row"> 
+    
+        <div class="myform">
+            <h1>Create a New Gem</h1>
+    
+            <form action="/gems" method="POST">
+                <div class="form-group">
+                    <input name="gem[name]" type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input name="gem[image]" type="text" placeholder="URL" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input name="gem[description]" type="text" placeholder="Description" class="form-control"></input>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-large btn-success btn-block">Submit</button>
+                </div>
+            </form>
+            
+            <a href="/gems" class="btn btn-large btn-info btn-block">Back to All Gems</a>
+        </div>
+        
+    </div>
+        
+</div>
+
+<% include ../partials/footer %>
