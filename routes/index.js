@@ -36,6 +36,7 @@ router.get("/login", function(req, res) {
 //Handle login logic
 router.post("/login", passport.authenticate("local", {
   successRedirect: "/gems",
+  //req.flash("error", "User with this combination of login/password does not exist");
   failureRedirect: "/login"
 }), function(req, res){
     

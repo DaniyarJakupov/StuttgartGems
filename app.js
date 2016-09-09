@@ -23,7 +23,9 @@ app.use(eSanitizer());
 app.use(flash());
 //seedDB();
 //=== DB Config ==========================================
-mongoose.connect("mongodb://localhost/gems");
+//mongoose.connect("mongodb://localhost/gems");
+mongoose.connect("mongodb://daniyar:chelsea42@ds019986.mlab.com:19986/stuttgartgems");
+//
 var Gem     = require("./models/gem");
 var Comment = require("./models/comment");
 var User    = require("./models/user");
