@@ -1,12 +1,13 @@
 {
   "name": "v1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stuttgart Gems",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "Dan",
+  "author": "Daniyar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
