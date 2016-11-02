@@ -26,8 +26,6 @@ app.use(flash());
 var dburl = process.env.DATABASEURL || "mongodb://localhost/gems"
 mongoose.connect(dburl);
 //
-//mongoose.connect("mongodb://daniyar:chelsea42@ds019986.mlab.com:19986/stuttgartgems");
-//
 var Gem     = require("./models/gem");
 var Comment = require("./models/comment");
 var User    = require("./models/user");
